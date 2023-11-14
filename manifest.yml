@@ -1,0 +1,10 @@
+---
+name: Visit
+category: Interactive Apps
+subcategory: GUIs
+role: batch_connect
+description: |
+  This app will launch a [Visit] GUI. You will be able
+  to interact with the Visit GUI through a VNC session.
+
+  [Visit]: https://visit-dav.github.io/visit-website/index.html

@@ -1,0 +1,9 @@
+<%- slurm_args = [] %>
+---
+batch_connect:
+  template: vnc
+script:
+  native:
+  <%- slurm_args.each do |arg| %>
+    - "<%= arg %>"
+  <%- end %>

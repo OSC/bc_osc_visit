@@ -1,0 +1,30 @@
+---
+form:
+  - cluster
+  - auto_accounts
+  - auto_modules_visit
+  - bc_num_hours
+  - cores
+attributes:
+  cores:
+    widget: "number_field"
+    label: "Number of cores"
+    value: 1
+    help: |
+      Number of CPU cores. (4 GB per core unless requesting whole
+      node). Maximum values are 28 and 48 for owens and pitzer respectively.
+      Leave blank if requesting full node.
+    min: 0
+    max: 28
+    step: 1
+  cluster:
+    widget: "select"
+    options:
+      - [
+          "owens", "owens",
+          data-max-cores: 28
+        ]
+      - [
+          "pitzer", "pitzer",
+          data-max-cores: 48
+        ]
