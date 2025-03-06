@@ -1,4 +1,4 @@
-<%- slurm_args = [] %>
+<%- slurm_args = ["--ntasks-per-node", cores.to_i] %>
 ---
 batch_connect:
   template: vnc
