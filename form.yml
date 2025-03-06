@@ -12,19 +12,23 @@ attributes:
     value: 1
     help: |
       Number of CPU cores. (4 GB per core unless requesting whole
-      node). Maximum values are 28 and 48 for owens and pitzer respectively.
-      Leave blank if requesting full node.
-    min: 0
+      node). Maximum values are 48, 96 and 118 for pitzer, cardinal
+      and ascend respectively.
+    min: 1
     max: 28
     step: 1
   cluster:
     widget: "select"
     options:
       - [
-          "owens", "owens",
-          data-max-cores: 28
-        ]
-      - [
           "pitzer", "pitzer",
           data-max-cores: 48
+        ]
+      - [
+          "cardinal", "cardinal",
+          data-max-cores: 96
+        ]
+      - [
+          "nextgen-ascend", "nextgen-ascend",
+          data-max-cores: 118
         ]
