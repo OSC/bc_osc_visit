@@ -29,6 +29,6 @@ attributes:
           data-max-cores: 96
         ]
       - [
-          "nextgen-ascend", "nextgen-ascend",
+          "ascend-nextgen", "ascend-nextgen",
           data-max-cores: 118
         ]
