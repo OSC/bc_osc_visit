@@ -31,6 +31,6 @@ attributes:
           data-max-cores: 96
         ]
       - [
-          "ascend_nextgen", "ascend_nextgen",
+          "ascend", "ascend",
           data-max-cores: 118
         ]
