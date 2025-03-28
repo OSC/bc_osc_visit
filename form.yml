@@ -6,6 +6,8 @@ form:
   - bc_num_hours
   - cores
 attributes:
+  auto_modules_visit:
+    default: false
   cores:
     widget: "number_field"
     label: "Number of cores"
@@ -29,6 +31,6 @@ attributes:
           data-max-cores: 96
         ]
       - [
-          "ascend-nextgen", "ascend-nextgen",
+          "ascend", "ascend",
           data-max-cores: 118
         ]
