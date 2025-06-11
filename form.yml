@@ -27,6 +27,10 @@ attributes:
           data-max-cores: 48
         ]
       - [
+          "pitzer-rhel9", "pitzer-rhel9",
+          data-max-cores: 48
+        ]
+      - [
           "cardinal", "cardinal",
           data-max-cores: 96
         ]
