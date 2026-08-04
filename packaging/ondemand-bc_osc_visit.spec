@@ -10,7 +10,7 @@
 Name:     ondemand-%{app_name}
 Version:  %{package_version}
 Release:  %{package_release}%{?dist}
-Summary:  An Open-OnDemand interactive application for the Visit software.
+Summary:  An Open-OnDemand interactive application for the VisIt software.
 
 Group:    System Environment/Daemons
 License:  MIT
@@ -24,7 +24,7 @@ Requires: ondemand
 AutoReqProv: no
 
 %description
-DESCRIPTION
+A Batch Connect app designed for OSC OnDemand that launches VisIt within a batch job.
 
 %prep
 %setup -q -n %{repo_name}-%{git_tag_minus_v}

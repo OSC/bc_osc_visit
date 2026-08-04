@@ -1,21 +1,23 @@
 ---
 form:
   - cluster
-  - auto_accounts
   - auto_modules_visit
+  - auto_accounts
   - bc_num_hours
   - cores
 attributes:
   auto_modules_visit:
     default: false
+    help: "This defines the version of VisIt you want to load."
+    label: "VisIt version"
   cores:
     widget: "number_field"
     label: "Number of cores"
     value: 1
     help: |
-      Number of CPU cores. (4 GB per core unless requesting whole
-      node). Maximum values are 48, 96 and 118 for pitzer, cardinal
-      and ascend respectively.
+      Number of CPU cores. (At least 4 GB of memory per core).
+      Maximum values are 48, 96 and 120 cores for Pitzer, Cardinal,
+      and Ascend respectively.
     min: 1
     max: 28
     step: 1
@@ -32,5 +34,5 @@ attributes:
         ]
       - [
           "ascend", "ascend",
-          data-max-cores: 118
+          data-max-cores: 120
         ]
