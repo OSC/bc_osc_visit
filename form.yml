@@ -4,13 +4,14 @@ form:
   - auto_modules_visit
   - auto_accounts
   - bc_num_hours
-  - cores
+  - num_cores
+  - bc_email_on_started
 attributes:
   auto_modules_visit:
     default: false
     help: "This defines the version of VisIt you want to load."
     label: "VisIt version"
-  cores:
+  num_cores:
     widget: "number_field"
     label: "Number of cores"
     value: 1
@@ -19,7 +20,7 @@ attributes:
       Maximum values are 48, 96 and 120 cores for Pitzer, Cardinal,
       and Ascend respectively.
     min: 1
-    max: 28
+    max: 48
     step: 1
   cluster:
     widget: "select"
