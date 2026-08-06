@@ -16,7 +16,7 @@ attributes:
     label: "Number of cores"
     value: 1
     help: |
-      Number of CPU cores. (At least 4 GB of memory per core).
+      Number of CPU cores (with at least 4 GB of memory per core).
       Maximum values are 48, 96 and 120 cores for Pitzer, Cardinal,
       and Ascend respectively.
     min: 1
