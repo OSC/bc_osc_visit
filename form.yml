@@ -1,36 +1,21 @@
 ---
+cluster:
+  - "pitzer"
+  - "cardinal"
+  - "ascend"
 form:
-  - cluster
-  - auto_accounts
   - auto_modules_visit
+  - auto_accounts
+  - global_job_type
+  - global_enable_mem
+  - global_num_cores
+  - global_mem
   - bc_num_hours
-  - cores
+  - global_enable_debug
+  - global_default_values
 attributes:
   auto_modules_visit:
     default: false
-  cores:
-    widget: "number_field"
-    label: "Number of cores"
-    value: 1
-    help: |
-      Number of CPU cores. (4 GB per core unless requesting whole
-      node). Maximum values are 48, 96 and 118 for pitzer, cardinal
-      and ascend respectively.
-    min: 1
-    max: 28
-    step: 1
-  cluster:
-    widget: "select"
-    options:
-      - [
-          "pitzer", "pitzer",
-          data-max-cores: 48
-        ]
-      - [
-          "cardinal", "cardinal",
-          data-max-cores: 96
-        ]
-      - [
-          "ascend", "ascend",
-          data-max-cores: 118
-        ]
+  global_job_type:
+    hide_by_default: true
+
